@@ -6,6 +6,12 @@ INSTALLATION::
 
 USAGE EXAMPLE::
 
+        """
+        The following example program gets a very large vector 
+        and tries to find the largest element in the vector.
+        It stops after a pre-specified time, and returns the largest element found so far.
+        """
+  
         import random, numpy as np
         from AnytimeAlgorithm2 import AnytimeAlgorithm
 

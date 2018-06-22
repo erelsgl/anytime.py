@@ -1,10 +1,10 @@
 A simple framework for implementing anytime algorithms in Python.
 
-INSTALLATION
+INSTALLATION::
 
         sudo -H pip3 install anytime
 
-USAGE EXAMPLE
+USAGE EXAMPLE::
 
         import random, numpy as np
         from AnytimeAlgorithm2 import AnytimeAlgorithm
@@ -28,3 +28,4 @@ USAGE EXAMPLE
         print(finder.result_after(0.0001))  # seconds
         print(finder.result_after(0.001))  # seconds
         print(finder.result_after(0.01)) # seconds
+

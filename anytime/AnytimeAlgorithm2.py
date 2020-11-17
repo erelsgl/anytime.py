@@ -31,9 +31,9 @@ class AnytimeAlgorithm(metaclass=abc.ABCMeta):
         * "iterations" iterations have passed (if iterations is given)
         """
         self.iteration = 0
-        start = time.clock()   # current time in seconds
+        start = time.perf_counter()   # current time in seconds
         while True:
-            if seconds is not None and time.clock()-start>seconds:
+            if seconds is not None and time.perf_counter()-start>seconds:
                 break
             if iterations is not None and self.iteration>=iterations:
                 break
